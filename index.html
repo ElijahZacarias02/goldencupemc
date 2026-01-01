@@ -18,434 +18,452 @@
     />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
-    >
-      <div class="container">
-        <!-- Logo -->
-        <a class="navbar-brand" href="#">
-          <img
-            src="assets/img/GOLDEN-CUP-LOGO-Fixed-280-px.png"
-            alt="GoldenCup Logo"
-            height="40"
-          />
-        </a>
-
-        <!-- Toggler for mobile -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navigation Links -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item">
-              <a class="nav-link active fw-semibold" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-semibold" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-semibold" href="#problem-solution"
-                >Solutions</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-semibold" href="#about-us">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-semibold" href="#footer">Contact Us</a>
-            </li>
-          </ul>
-        </div>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+      <div class="loading-content">
+        <img src="assets/img/web_icon.png" alt="Loading" class="loading-logo" />
+        <p class="loading-text">Loading...</p>
       </div>
-    </nav>
+    </div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <div class="row align-items-center">
-          <div class="col-lg-7">
-            <h1 class="fw-bold text-warning hero-headline">
-              Trusted Copier Solutions & Rentals in the Philippines
-            </h1>
-            <h3 class="text-warning">30+ Years Serving Filipino Businesses</h3>
-            <p class="hero-subtitle">
-              Delivering affordable copier rentals, sales, and maintenance with
-              reliable service. Trusted by schools, offices, and agencies
-              nationwide.
-            </p>
-            <a href="#services" class="btn btn-warning mt-3">Our Services</a>
-          </div>
-          <div class="col-lg-5">
-            <div class="quote-form">
-              <h5 class="text-center text-black fw-bold mb-3">
-                Get A Free Quote
-              </h5>
-              <form>
-                <input
-                  type="text"
-                  class="form-control mb-2"
-                  placeholder="Name"
-                />
-                <input
-                  type="text"
-                  class="form-control mb-2"
-                  placeholder="Company Name"
-                />
-                <input
-                  type="text"
-                  class="form-control mb-2"
-                  placeholder="Mobile Number"
-                />
-                <input
-                  type="email"
-                  class="form-control mb-2"
-                  placeholder="Email"
-                />
-                <div class="select-wrapper mb-2">
-                  <select class="form-control">
-                    <option>Sales</option>
-                    <option>Rental</option>
-                  </select>
-                </div>
-                <div class="select-wrapper mb-2">
-                  <select class="form-control">
-                    <option>Colored</option>
-                    <option>Black & White</option>
-                  </select>
-                </div>
-                <div class="select-wrapper mb-2">
-                  <select class="form-control">
-                    <option>Less than 5,000 copies</option>
-                    <option>Less than 10,000 copies</option>
-                    <option>More than 20,000 copies</option>
-                  </select>
-                </div>
-                <button type="submit" class="btn btn-secondary w-100">
-                  Send
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Main Content -->
+    <div id="main-content" class="main-content-hidden">
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
+      >
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img
+              src="assets/img/GOLDEN-CUP-LOGO-Fixed-280-px.png"
+              alt="GoldenCup Logo"
+              height="40"
+            />
+          </a>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-      <div class="container">
-        <h2 class="text-center services-heading">Our Services</h2>
-        <p class="text-center mt-3 services-intro">
-          We offer affordable copier sales, reliable printer leasing, and fast
-          technical support. Trusted by businesses across the Philippines.
-        </p>
+          <!-- Toggler for mobile -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="row mt-5">
-          <!-- Service 1 -->
-          <div class="col-md-6 col-lg-3 mb-4">
-            <div class="card h-100 shadow-sm">
-              <img
-                src="assets/img/Our-services-1.png"
-                class="card-img-top"
-                alt="Copier Rental"
-              />
-              <div class="card-body">
-                <h5 class="card-title fw-bold">Copier Rental</h5>
-                <p class="card-text">
-                  Get the right equipment without the long term commitment.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Service 2 -->
-          <div class="col-md-6 col-lg-3 mb-4">
-            <div class="card h-100 shadow-sm">
-              <img
-                src="assets/img/Our-services-2.png"
-                class="card-img-top"
-                alt="Copier Sales"
-              />
-              <div class="card-body">
-                <h5 class="card-title fw-bold">Copier Sales</h5>
-                <p class="card-text">
-                  High-quality machines that are perfect for your business
-                  needs.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Service 3 -->
-          <div class="col-md-6 col-lg-3 mb-4">
-            <div class="card h-100 shadow-sm">
-              <img
-                src="assets/img/Our-services-3.png"
-                class="card-img-top"
-                alt="Consumables & Parts"
-              />
-              <div class="card-body">
-                <h5 class="card-title fw-bold">Consumables & Parts</h5>
-                <p class="card-text">
-                  Stocked and ready, so you never run out.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Service 4 -->
-          <div class="col-md-6 col-lg-3 mb-4">
-            <div class="card h-100 shadow-sm">
-              <img
-                src="assets/img/Our-services-4.png"
-                class="card-img-top"
-                alt="Maintenance & Service"
-              />
-              <div class="card-body">
-                <h5 class="card-title fw-bold">Maintenance & Service</h5>
-                <p class="card-text">
-                  Downtime isn't an option, our team has you covered.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="text-center mt-4">
-          <!-- <a href="#" class="btn btn-warning">View all services</a> -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Problem/Solution Section -->
-    <section class="problem-solution" id="problem-solution">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <h2 class="problem-heading">
-              It shouldn't be this hard to get a reliable copier.
-            </h2>
-            <p class="problem-intro">
-              Most copier suppliers are focused on big corporations, so if
-              you're a small office, a school, or a standalone print shop—you're
-              often left with:
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <div class="problem-boxes">
-              <div class="problem-box">
-                <h6 class="fw-bold">Long wait times for repairs</h6>
-                <p>
-                  Waiting days or even weeks for copier repair in Metro Manila
-                  leaves offices offline and productivity stalled.
-                </p>
-              </div>
-              <div class="problem-box">
-                <h6 class="fw-bold">Expensive lock-in contracts</h6>
-                <p>
-                  Many businesses get locked into rigid copier rental agreements
-                  with hidden fees and little room for change.
-                </p>
-              </div>
-              <div class="problem-box">
-                <h6 class="fw-bold">
-                  Poor After-Sales Support for Office Equipment
-                </h6>
-                <p>
-                  After leasing or purchasing, customers often struggle with
-                  slow response times and limited technical support, especially
-                  during critical breakdowns.
-                </p>
-              </div>
-              <div class="problem-box">
-                <h6 class="fw-bold">Sudden Copier Breakdowns</h6>
-                <p>
-                  Unexpected copier and printer malfunctions like paper jams,
-                  overheating, streaks, or phantom error codes which can derail
-                  operations and lead to emergency spending.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="problem-footer-text">
-          At Golden Cup, we built our solutions around you—the everyday business
-          owner, the teacher, the printer shop manager. You need machines that
-          work, support that shows up, and options that fit your budget.
-        </p>
-      </div>
-    </section>
-
-    <!-- About Us Section -->
-    <section class="about-us" id="about-us">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <h2 class="about-heading">About Us</h2>
-            <p class="about-text">
-              Golden Cup Exim Marketing Corporation has been a trusted leader in
-              the photocopier industry for over 30 years. We specialize in
-              providing high-quality copier solutions, including sales, rentals,
-              maintenance, and consumables, to businesses across the
-              Philippines. Our commitment to efficiency, reliability, and
-              customer satisfaction has made us a preferred partner for schools,
-              offices, and agencies nationwide. We understand the unique needs
-              of Filipino businesses and offer flexible, affordable solutions
-              that help organizations operate smoothly without the burden of
-              expensive long-term contracts or unreliable equipment.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <div class="about-image">
-              <div class="carousel-container">
-                <div class="carousel-wrapper">
-                  <img
-                    src="assets/img/Our-services-1.png"
-                    class="carousel-image active img-fluid rounded"
-                    alt="About Golden Cup"
-                  />
-                  <img
-                    src="assets/img/Our-services-2.png"
-                    class="carousel-image img-fluid rounded"
-                    alt="About Golden Cup"
-                  />
-                  <img
-                    src="assets/img/Our-services-3.png"
-                    class="carousel-image img-fluid rounded"
-                    alt="About Golden Cup"
-                  />
-                  <img
-                    src="assets/img/Our-services-4.png"
-                    class="carousel-image img-fluid rounded"
-                    alt="About Golden Cup"
-                  />
-                </div>
-                <button
-                  class="carousel-arrow carousel-arrow-left"
-                  aria-label="Previous image"
+          <!-- Navigation Links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+              <li class="nav-item">
+                <a class="nav-link active fw-semibold" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold" href="#problem-solution"
+                  >Solutions</a
                 >
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M15 18L9 12L15 6"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold" href="#about-us">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold" href="#footer">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <h1 class="fw-bold text-warning hero-headline">
+                Trusted Copier Solutions & Rentals in the Philippines
+              </h1>
+              <h3 class="text-warning">
+                30+ Years Serving Filipino Businesses
+              </h3>
+              <p class="hero-subtitle">
+                Delivering affordable copier rentals, sales, and maintenance
+                with reliable service. Trusted by schools, offices, and agencies
+                nationwide.
+              </p>
+              <a href="#services" class="btn btn-warning mt-3">Our Services</a>
+            </div>
+            <div class="col-lg-5">
+              <div class="quote-form">
+                <h5 class="text-center text-black fw-bold mb-3">
+                  Get A Free Quote
+                </h5>
+                <form>
+                  <input
+                    type="text"
+                    class="form-control mb-2"
+                    placeholder="Name"
+                  />
+                  <input
+                    type="text"
+                    class="form-control mb-2"
+                    placeholder="Company Name"
+                  />
+                  <input
+                    type="text"
+                    class="form-control mb-2"
+                    placeholder="Mobile Number"
+                  />
+                  <input
+                    type="email"
+                    class="form-control mb-2"
+                    placeholder="Email"
+                  />
+                  <div class="select-wrapper mb-2">
+                    <select class="form-control">
+                      <option>Sales</option>
+                      <option>Rental</option>
+                    </select>
+                  </div>
+                  <div class="select-wrapper mb-2">
+                    <select class="form-control">
+                      <option>Colored</option>
+                      <option>Black & White</option>
+                    </select>
+                  </div>
+                  <div class="select-wrapper mb-2">
+                    <select class="form-control">
+                      <option>Less than 5,000 copies</option>
+                      <option>Less than 10,000 copies</option>
+                      <option>More than 20,000 copies</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="btn btn-secondary w-100">
+                    Send
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="services" id="services">
+        <div class="container">
+          <h2 class="text-center services-heading">Our Services</h2>
+          <p class="text-center mt-3 services-intro">
+            We offer affordable copier sales, reliable printer leasing, and fast
+            technical support. Trusted by businesses across the Philippines.
+          </p>
+
+          <div class="row mt-5">
+            <!-- Service 1 -->
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="assets/img/Our-services-1.png"
+                  class="card-img-top"
+                  alt="Copier Rental"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Copier Rental</h5>
+                  <p class="card-text">
+                    Get the right equipment without the long term commitment.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="assets/img/Our-services-2.png"
+                  class="card-img-top"
+                  alt="Copier Sales"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Copier Sales</h5>
+                  <p class="card-text">
+                    High-quality machines that are perfect for your business
+                    needs.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="assets/img/Our-services-3.png"
+                  class="card-img-top"
+                  alt="Consumables & Parts"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Consumables & Parts</h5>
+                  <p class="card-text">
+                    Stocked and ready, so you never run out.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="assets/img/Our-services-4.png"
+                  class="card-img-top"
+                  alt="Maintenance & Service"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Maintenance & Service</h5>
+                  <p class="card-text">
+                    Downtime isn't an option, our team has you covered.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <!-- <a href="#" class="btn btn-warning">View all services</a> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Problem/Solution Section -->
+      <section class="problem-solution" id="problem-solution">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <h2 class="problem-heading">
+                It shouldn't be this hard to get a reliable copier.
+              </h2>
+              <p class="problem-intro">
+                Most copier suppliers are focused on big corporations, so if
+                you're a small office, a school, or a standalone print
+                shop—you're often left with:
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <div class="problem-boxes">
+                <div class="problem-box">
+                  <h6 class="fw-bold">Long wait times for repairs</h6>
+                  <p>
+                    Waiting days or even weeks for copier repair in Metro Manila
+                    leaves offices offline and productivity stalled.
+                  </p>
+                </div>
+                <div class="problem-box">
+                  <h6 class="fw-bold">Expensive lock-in contracts</h6>
+                  <p>
+                    Many businesses get locked into rigid copier rental
+                    agreements with hidden fees and little room for change.
+                  </p>
+                </div>
+                <div class="problem-box">
+                  <h6 class="fw-bold">
+                    Poor After-Sales Support for Office Equipment
+                  </h6>
+                  <p>
+                    After leasing or purchasing, customers often struggle with
+                    slow response times and limited technical support,
+                    especially during critical breakdowns.
+                  </p>
+                </div>
+                <div class="problem-box">
+                  <h6 class="fw-bold">Sudden Copier Breakdowns</h6>
+                  <p>
+                    Unexpected copier and printer malfunctions like paper jams,
+                    overheating, streaks, or phantom error codes which can
+                    derail operations and lead to emergency spending.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="problem-footer-text">
+            At Golden Cup, we built our solutions around you—the everyday
+            business owner, the teacher, the printer shop manager. You need
+            machines that work, support that shows up, and options that fit your
+            budget.
+          </p>
+        </div>
+      </section>
+
+      <!-- About Us Section -->
+      <section class="about-us" id="about-us">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <h2 class="about-heading">About Us</h2>
+              <p class="about-text">
+                Golden Cup Exim Marketing Corporation has been a trusted leader
+                in the photocopier industry for over 30 years. We specialize in
+                providing high-quality copier solutions, including sales,
+                rentals, maintenance, and consumables, to businesses across the
+                Philippines. Our commitment to efficiency, reliability, and
+                customer satisfaction has made us a preferred partner for
+                schools, offices, and agencies nationwide. We understand the
+                unique needs of Filipino businesses and offer flexible,
+                affordable solutions that help organizations operate smoothly
+                without the burden of expensive long-term contracts or
+                unreliable equipment.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <div class="about-image">
+                <div class="carousel-container">
+                  <div class="carousel-wrapper">
+                    <img
+                      src="assets/img/Our-services-1.png"
+                      class="carousel-image active img-fluid rounded"
+                      alt="About Golden Cup"
                     />
-                  </svg>
-                </button>
-                <button
-                  class="carousel-arrow carousel-arrow-right"
-                  aria-label="Next image"
-                >
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M9 18L15 12L9 6"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                    <img
+                      src="assets/img/Our-services-2.png"
+                      class="carousel-image img-fluid rounded"
+                      alt="About Golden Cup"
                     />
-                  </svg>
-                </button>
-              </div>
-              <div class="carousel-dots">
-                <span class="dot active" data-index="0"></span>
-                <span class="dot" data-index="1"></span>
-                <span class="dot" data-index="2"></span>
-                <span class="dot" data-index="3"></span>
+                    <img
+                      src="assets/img/Our-services-3.png"
+                      class="carousel-image img-fluid rounded"
+                      alt="About Golden Cup"
+                    />
+                    <img
+                      src="assets/img/Our-services-4.png"
+                      class="carousel-image img-fluid rounded"
+                      alt="About Golden Cup"
+                    />
+                  </div>
+                  <button
+                    class="carousel-arrow carousel-arrow-left"
+                    aria-label="Previous image"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15 18L9 12L15 6"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    class="carousel-arrow carousel-arrow-right"
+                    aria-label="Next image"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9 18L15 12L9 6"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="carousel-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                  <span class="dot" data-index="3"></span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Footer -->
-    <footer class="footer" id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <div class="footer-logo mb-3">
-              <img
-                src="assets/img/GOLDEN-CUP-LOGO-Fixed-280-px.png"
-                alt="Golden Cup Logo"
-                height="50"
-              />
-            </div>
-            <p class="footer-description">
-              A trusted leader in the photocopier industry with over 30 years of
-              experience, offering high-quality solutions for photocopier
-              machines.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <h5 class="footer-heading mb-3">Get In Touch</h5>
-            <div class="footer-contact">
-              <p class="mb-2">
-                <strong>Address:</strong> 2437 Tejeron Street, Sta. Ana, Manila,
-                1009, Philippines
+      <!-- Footer -->
+      <footer class="footer" id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <div class="footer-logo mb-3">
+                <img
+                  src="assets/img/GOLDEN-CUP-LOGO-Fixed-280-px.png"
+                  alt="Golden Cup Logo"
+                  height="50"
+                />
+              </div>
+              <p class="footer-description">
+                A trusted leader in the photocopier industry with over 30 years
+                of experience, offering high-quality solutions for photocopier
+                machines.
               </p>
-              <p class="mb-2">
-                <strong>Email:</strong>
-                <a href="mailto:info@goldencupemc.com">info@goldencupemc.com</a>
-                |
-                <a href="mailto:billing@goldencupemc.com"
-                  >billing@goldencupemc.com</a
+            </div>
+            <div class="col-lg-6">
+              <h5 class="footer-heading mb-3">Get In Touch</h5>
+              <div class="footer-contact">
+                <p class="mb-2">
+                  <strong>Address:</strong> 2437 Tejeron Street, Sta. Ana,
+                  Manila, 1009, Philippines
+                </p>
+                <p class="mb-2">
+                  <strong>Email:</strong>
+                  <a href="mailto:info@goldencupemc.com"
+                    >info@goldencupemc.com</a
+                  >
+                  |
+                  <a href="mailto:billing@goldencupemc.com"
+                    >billing@goldencupemc.com</a
+                  >
+                </p>
+                <p class="mb-2">
+                  <strong>Phone:</strong> (02) 8562-0466 | (02) 8562-4566
+                </p>
+                <p class="mb-2">
+                  <strong>Mobile:</strong> (63) 917 870 7694 | (63) 919 994 7374
+                </p>
+                <p class="mb-0">
+                  <strong>Hours:</strong> Mon-Fri 9:00AM - 5:00PM
+                </p>
+              </div>
+              <div class="footer-social mt-4">
+                <h5 class="footer-heading mb-3">Follow Us</h5>
+                <a
+                  href="https://www.facebook.com/Goldencupemc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                  aria-label="Follow us on Facebook"
                 >
-              </p>
-              <p class="mb-2">
-                <strong>Phone:</strong> (02) 8562-0466 | (02) 8562-4566
-              </p>
-              <p class="mb-2">
-                <strong>Mobile:</strong> (63) 917 870 7694 | (63) 919 994 7374
-              </p>
-              <p class="mb-0">
-                <strong>Hours:</strong> Mon-Fri 9:00AM - 5:00PM
-              </p>
-            </div>
-            <div class="footer-social mt-4">
-              <h5 class="footer-heading mb-3">Follow Us</h5>
-              <a
-                href="https://www.facebook.com/Goldencupemc"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="social-link"
-                aria-label="Follow us on Facebook"
-              >
-                <i class="fab fa-facebook-f"></i>
-                <span>Facebook</span>
-              </a>
+                  <i class="fab fa-facebook-f"></i>
+                  <span>Facebook</span>
+                </a>
+              </div>
             </div>
           </div>
+          <div class="footer-copyright text-center">
+            <p class="mb-0">© 2026 All Rights Reserved.</p>
+          </div>
         </div>
-        <div class="footer-copyright text-center">
-          <p class="mb-0">© 2026 All Rights Reserved.</p>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
+    <!-- End Main Content -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>

@@ -1,3 +1,20 @@
+// Loading Screen Functionality
+window.addEventListener("load", function () {
+  const loadingScreen = document.getElementById("loading-screen");
+  const mainContent = document.getElementById("main-content");
+
+  // Hide loading screen and show main content after a short delay
+  setTimeout(function () {
+    if (loadingScreen) {
+      loadingScreen.classList.add("hidden");
+    }
+    if (mainContent) {
+      mainContent.classList.remove("main-content-hidden");
+      mainContent.classList.add("main-content-visible");
+    }
+  }, 1000); // 1 second delay to show the loading animation
+});
+
 // Carousel functionality
 document.addEventListener("DOMContentLoaded", function () {
   const images = document.querySelectorAll(".carousel-image");
